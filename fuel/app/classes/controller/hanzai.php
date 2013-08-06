@@ -56,7 +56,7 @@ class Controller_Hanzai extends Controller
 			$result[$key]['date_reported'] = $datetime->format('U');
 
 			// Add basic information to our markers array.
-			$markers[] = [$value["latitude"], $value['longitude'], $value['summarized_offense_description'], $datetime->format('U')];
+			$markers[] = array($value["latitude"], $value['longitude'], $value['summarized_offense_description'], $datetime->format('U'));
 		}
 
 		// Finally, we're going to assign the data we wish to pass to our template/view file
